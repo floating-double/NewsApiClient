@@ -24,11 +24,11 @@ class News(JsonSerializable):
         return json.dumps(self.__dict__)
 
     def to_json(self):
-        return {"news": {'title': self.title,
-                         'source': self.source,
-                         'author': self.author,
-                         'description': self.description,
-                         'url': self.url,
-                         'urlToImage': self.urlToImage,
-                         'publishedAt': self.publishedAt,
-                         'content': self.content}}
+        return {'title': self.title,
+                'source': self.source,
+                'author': self.author,
+                'description': self.description,
+                'url': self.url,
+                'urlToImage': self.urlToImage,
+                'publishedAt': self.publishedAt,
+                'content': self.content}
